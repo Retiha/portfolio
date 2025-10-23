@@ -12,15 +12,13 @@ const Hero = () => {
             <h1>
               Hi, I'm <span>Retiha</span> 👋
             </h1>
-            <h2>Front-End Developer | Tech Enthusiast</h2>
+            <h2>Front-End Developer</h2>
             <p>
               I love creating elegant, responsive, and interactive web experiences
               using modern technologies like React, Tailwind CSS, and JavaScript.
               My passion lies in designing websites that feel intuitive and look beautiful.
             </p>
-            <a href={resumePDF} download="Retiha_Resume.pdf">
-              <button className="resume-btn">📄 Download Resume</button>
-            </a>
+           
           </div>
 
           {/* Right side - Image */}
