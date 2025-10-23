@@ -122,69 +122,82 @@ function Contact() {
           {success && <p style={{ color: "#6c63ff" }}>{success}</p>}
         </form>
 
-        {/* Social Links */}
+        {/* Social Links - Single Line */}
         <div
           className="social-links"
           style={{
             flex: "1 1 200px",
             display: "flex",
-            flexDirection: "column",
-            gap: "15px",
+            justifyContent: "space-around",
+            alignItems: "center",
+            gap: "30px",
+            flexWrap: "wrap",
           }}
         >
+          {/* Email */}
           <a
             href="mailto:youremail@example.com"
             target="_blank"
             rel="noopener noreferrer"
             style={{
               display: "flex",
+              flexDirection: "column",
               alignItems: "center",
-              gap: "10px",
+              gap: "5px",
               color: "#dcd6f7",
               textDecoration: "none",
-              fontSize: "18px",
+              fontSize: "16px",
               transition: "color 0.3s",
             }}
             onMouseEnter={(e) => (e.target.style.color = "#6c63ff")}
             onMouseLeave={(e) => (e.target.style.color = "#dcd6f7")}
           >
-            <FaEnvelope /> Email
+            <FaEnvelope size={36} />
+            <span>Email</span>
           </a>
+
+          {/* GitHub */}
           <a
             href="https://github.com/yourusername"
             target="_blank"
             rel="noopener noreferrer"
             style={{
               display: "flex",
+              flexDirection: "column",
               alignItems: "center",
-              gap: "10px",
+              gap: "5px",
               color: "#dcd6f7",
               textDecoration: "none",
-              fontSize: "18px",
+              fontSize: "16px",
               transition: "color 0.3s",
             }}
             onMouseEnter={(e) => (e.target.style.color = "#6c63ff")}
             onMouseLeave={(e) => (e.target.style.color = "#dcd6f7")}
           >
-            <FaGithub /> GitHub
+            <FaGithub size={36} />
+            <span>GitHub</span>
           </a>
+
+          {/* LinkedIn */}
           <a
             href="https://linkedin.com/in/yourusername"
             target="_blank"
             rel="noopener noreferrer"
             style={{
               display: "flex",
+              flexDirection: "column",
               alignItems: "center",
-              gap: "10px",
+              gap: "5px",
               color: "#dcd6f7",
               textDecoration: "none",
-              fontSize: "18px",
+              fontSize: "16px",
               transition: "color 0.3s",
             }}
             onMouseEnter={(e) => (e.target.style.color = "#6c63ff")}
             onMouseLeave={(e) => (e.target.style.color = "#dcd6f7")}
           >
-            <FaLinkedin /> LinkedIn
+            <FaLinkedin size={36} />
+            <span>LinkedIn</span>
           </a>
         </div>
       </div>
