@@ -5,11 +5,9 @@ const certificatesData = [
   { title: "JavaScript Essentials", issuer: "Udemy", year: "2024", link: "#" },
   { title: "Full-Stack Web Development", issuer: "freeCodeCamp", year: "2025", link: "#" },
   { title: "Machine Learning Basics", issuer: "Coursera", year: "2025", link: "#" },
-  { title: "Node.js Backend Development", issuer: "Udemy", year: "2024", link: "#" },
-  { title: "CSS Flexbox & Grid Mastery", issuer: "freeCodeCamp", year: "2024", link: "#" },
   { title: "Python Programming Fundamentals", issuer: "Coursera", year: "2023", link: "#" },
   { title: "Data Structures & Algorithms", issuer: "Udemy", year: "2024", link: "#" },
-  { title: "UI/UX Design Basics", issuer: "Coursera", year: "2025", link: "#" },
+
 ];
 
 function Certificates() {

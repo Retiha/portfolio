@@ -17,7 +17,7 @@ function About() {
         <div>
           <h2 style={{ color: "#dcd6f7" }}>About Me</h2>
           <p style={{ color: "#ccc", fontSize: "1.1rem", lineHeight: "1.6" }}>
-            Hello! I'm <b>[Your Name]</b>, a passionate front-end developer who loves creating clean, interactive, and responsive web interfaces. I enjoy learning modern web technologies like React, Node.js, and UI/UX design to deliver professional web solutions.
+            Hello! I'm <b>Retiha</b>, a passionate front-end developer who loves creating clean, interactive, and responsive web interfaces. I enjoy learning modern web technologies like React, Node.js, and UI/UX design to deliver professional web solutions.
           </p>
         </div>
 

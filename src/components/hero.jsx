@@ -1,82 +1,142 @@
 import React from "react";
-import profilePic from "../assets/profile.jpg"; // Make sure your profile image exists here
+import profilePic from "../assets/profile.jpg";
+import resumePDF from "../assets/resume.pdf";
 
-function Hero() {
+const Hero = () => {
   return (
-    <section
-      id="hero"
-      className="section hero-section"
-      style={{
-        background: "#0a0a0a",
-        padding: "100px 10%",
-      }}
-    >
-      <div
-        className="hero-container"
-        style={{
-          display: "flex",
-          alignItems: "center",
-          gap: "40px",
-          flexWrap: "wrap",
-          justifyContent: "space-between",
-        }}
-      >
-        {/* Hero Text */}
-        <div style={{ flex: 1, minWidth: "300px" }}>
-          <h1 style={{ color: "#dcd6f7", fontSize: "2.5rem", marginBottom: "15px" }}>
-            Hello, I'm [Your Name]
-          </h1>
-          <p style={{ color: "#ccc", fontSize: "1.2rem", lineHeight: "1.6" }}>
-            Front-end Developer | React | JavaScript | Portfolio
-          </p>
-          <div style={{ marginTop: "20px", display: "flex", gap: "20px", flexWrap: "wrap" }}>
-            <a href="#contact">
-              <button
-                style={{
-                  backgroundColor: "#6c63ff",
-                  color: "#fff",
-                  padding: "10px 20px",
-                  borderRadius: "6px",
-                  border: "none",
-                }}
-              >
-                Contact Me
-              </button>
-            </a>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer">
-              <button
-                style={{
-                  backgroundColor: "#fff",
-                  color: "#6c63ff",
-                  padding: "10px 20px",
-                  borderRadius: "6px",
-                  border: "none",
-                }}
-              >
-                Download Resume
-              </button>
+    <>
+      <section className="hero-section" id="hero">
+        <div className="hero-content">
+          {/* Left side - Text */}
+          <div className="text-content">
+            <h1>
+              Hi, I'm <span>Retiha</span> 👋
+            </h1>
+            <h2>Front-End Developer | Tech Enthusiast</h2>
+            <p>
+              I love creating elegant, responsive, and interactive web experiences
+              using modern technologies like React, Tailwind CSS, and JavaScript.
+              My passion lies in designing websites that feel intuitive and look beautiful.
+            </p>
+            <a href={resumePDF} download="Retiha_Resume.pdf">
+              <button className="resume-btn">📄 Download Resume</button>
             </a>
           </div>
-        </div>
 
-        {/* Hero Image */}
-        <div style={{ flex: 1, minWidth: "250px" }}>
-          <img
-            src={profilePic}
-            alt="Profile"
-            style={{
-              width: "250px",
-              height: "250px",
-              objectFit: "cover",
-              borderRadius: "50%",
-              border: "3px solid #6c63ff",
-            }}
-          />
-          
+          {/* Right side - Image */}
+          <div className="image-content">
+            <img
+              src={profilePic}
+              alt="Profile"
+              className="profile-img"
+            />
+          </div>
         </div>
-      </div>
-    </section>
+      </section>
+
+      {/* Inline CSS */}
+      <style>{`
+        .hero-section {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 120px 10%;
+          background: linear-gradient(135deg, #080808ff, #1a1a1a);
+          min-height: 100vh;
+          color: #333;
+          position: relative;
+        }
+
+        .hero-content {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 60px;
+          max-width: 1200px;
+          width: 100%;
+        }
+
+        .text-content {
+          flex: 1;
+          max-width: 600px;
+        }
+
+        .text-content h1 {
+          font-size: 2.8rem;
+          margin-bottom: 10px;
+        }
+
+        .text-content h1 span {
+          color: #0078ff;
+        }
+
+        .text-content h2 {
+          font-size: 1.5rem;
+          color: #dcd6f7;
+          margin-bottom: 20px;
+        }
+
+        .text-content p {
+          font-size: 1.1rem;
+          line-height: 1.8;
+          color: #dcd6f7;
+          margin-bottom: 30px;
+        }
+
+        .resume-btn {
+          background-color: #0078ff;
+          color: white;
+          border: none;
+          padding: 12px 25px;
+          border-radius: 30px;
+          font-size: 1rem;
+          cursor: pointer;
+          transition: all 0.3s ease;
+        }
+
+        .resume-btn:hover {
+          background-color: #005fcc;
+          transform: scale(1.05);
+        }
+
+        .image-content {
+          flex: 1;
+          display: flex;
+          justify-content: center;
+        }
+
+        .profile-img {
+          width: 280px;
+          height: 280px;
+          border-radius: 50%;
+          object-fit: cover;
+          border: 4px solid #0078ff;
+          box-shadow: 0 8px 20px rgba(0, 120, 255, 0.3);
+          transition: transform 0.3s ease;
+        }
+
+        .profile-img:hover {
+          transform: scale(1.05);
+        }
+
+        @media (max-width: 900px) {
+          .hero-content {
+            flex-direction: column-reverse;
+            text-align: center;
+          }
+
+          .text-content {
+            max-width: 100%;
+          }
+
+          .profile-img {
+            width: 220px;
+            height: 220px;
+          }
+        }
+      `}</style>
+    </>
   );
-}
+};
 
 export default Hero;

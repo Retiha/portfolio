@@ -7,7 +7,6 @@ const data = [
   { skill: "JavaScript", level: 80 },
   { skill: "React", level: 75 },
   { skill: "Node.js", level: 70 },
-  { skill: "Git/GitHub", level: 85 },
 ];
 
 function Skills() {
