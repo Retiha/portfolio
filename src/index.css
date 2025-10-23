@@ -1,0 +1,145 @@
+/* Reset & basic styling */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0a0a0a; /* Dark background */
+  color: #e0e0e0; /* Light text */
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Section styling */
+.section {
+  padding: 80px 10%;
+  border-radius: 12px;
+  margin: 40px 0;
+}
+
+h2 {
+  color: #dcd6f7; /* Light purple heading */
+  margin-bottom: 15px;
+}
+
+h3 {
+  color: #cfcfff;
+}
+
+p {
+  color: #ccc;
+}
+
+/* Grid layout for sections */
+.portfolio-grid > section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Buttons */
+button {
+  background-color: #6c63ff; /* Purple theme */
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+}
+
+button:hover {
+  background-color: #5248c8;
+  transform: translateY(-3px);
+}
+
+/* Cards hover effect */
+.project-card,
+.skill-box,
+.certificate-card,
+.about-box {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover,
+.skill-box:hover,
+.certificate-card:hover,
+.about-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(108, 99, 255, 0.4);
+}
+
+/* Hero section */
+.hero-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  color: #dcd6f7;
+}
+
+.img-rounded {
+  border-radius: 50%;
+  border: 3px solid #6c63ff;
+  width: 250px;
+  height: 250px;
+  object-fit: cover;
+}
+.skills-section h2 {
+  margin-bottom: 15px;
+}
+
+.skill-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(108, 99, 255, 0.4);
+}
+
+.skills-grid div div {
+  transition: width 1s ease-in-out;
+}
+.hero-section button:hover {
+  transform: translateY(-3px);
+  opacity: 0.9;
+  transition: all 0.3s ease;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-container img {
+    margin-top: 30px;
+  }
+}
+.skill-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(108, 99, 255, 0.4);
+}
+
+.skills-grid div div {
+  transition: width 1s ease-in-out;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(108, 99, 255, 0.4);
+}
