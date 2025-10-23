@@ -79,7 +79,7 @@ function About() {
             }}
           >
             <h3 style={{ color: "#6c63ff" }}>Interests</h3>
-            <p>UI/UX Design, Web Animation, Open Source</p>
+            <p> Web Animation, Open Source</p>
           </div>
         </div>
       </div>
