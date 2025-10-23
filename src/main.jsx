@@ -5,7 +5,7 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter basename="https://retiha.github.io/portfolio/">
+    <BrowserRouter>
       <App />
     </BrowserRouter>
   </React.StrictMode>
