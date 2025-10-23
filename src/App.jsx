@@ -7,7 +7,7 @@ import Projects from "./components/projects";
 import Certificates from "./components/certificates";
 import Contact from "./components/contact";
 import "./App.css";
-import Resume from "./components/resume";
+
 
 function App() {
   return (
@@ -19,7 +19,6 @@ function App() {
         <Skills />
         <Projects />
         <Certificates />
-        <Resume />
         <Contact />
         
       </main>
